@@ -16,7 +16,7 @@ Use the following properties and pass it as a props to TypeAnime component and s
 </ul>
 
 ![text1.gif](text1.gif)
-```json lines
+```jsx
 <TextAnime
     style={"text-4xl text-gray-700 w-full items-center h-full text-center m-0"}
     text={['Single Text that disappears and starts 1s late']}
@@ -27,7 +27,7 @@ Use the following properties and pass it as a props to TypeAnime component and s
 You can change Styles also iwth tailwindcss :0
 
 ![text2.gif](text2.gif)
-```json lines
+```jsx
 <TextAnime
     style={"text-4xl text-lime-900/50 w-full items-center h-full text-center m-0"}
     text={['Single Text that doesnt disappear with no cursor']}
@@ -38,7 +38,7 @@ You can change Styles also iwth tailwindcss :0
 ![text3.gif](text3.gif)
 Don't want cursor at the end ... here we go ;-)
 
-```json lines
+```jsx
 <TextAnime
     style={"text-4xl text-pink-900 w-full items-center h-full text-center m-0"}
     text={['Single Text that doesnt disappear and cursor disappears at end']}
@@ -48,7 +48,7 @@ Don't want cursor at the end ... here we go ;-)
 We can loop  ∞ infinitely ∞
 
 ![text4.gif](text4.gif)
-```json lines
+```jsx
 <TextAnime
     style={"text-4xl text-amber-900/60 w-full items-center h-full text-center m-0"}
     text={['Single Text that loops forever without deleting previous']}
@@ -60,7 +60,7 @@ We can loop  ∞ infinitely ∞
 Mutiple texts maybe if you need ?
 
 ![text5.gif](text5.gif)
-```json lines
+```jsx
 <TextAnime
     style={"text-4xl text-blue-900 w-full items-center h-full text-center m-0"}
     text={['Multiple texts that keeps looping','You can also change typing speed','and other properties including styling also']}
@@ -71,7 +71,7 @@ Mutiple texts maybe if you need ?
 Have Fun !!!
 
 ![text6.gif](text6.gif)
-```json lines
+```jsx
 <TextAnime
     style={"text-4xl text-yellow-400 w-full items-center h-full text-center m-0"}
     text={['Have Fun ㋡㋡㋡㋡㋡㋡㋡㋡㋡㋡','started a bit late no? ㋡㋡㋡', 'Cursor won\'t disappear ㋡㋡㋡','It won\'t loop','waits 2s before transition','㋡㋡㋡㋡㋡㋡㋡㋡']}
