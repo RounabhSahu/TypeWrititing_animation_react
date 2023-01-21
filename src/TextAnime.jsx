@@ -3,7 +3,7 @@ import Driver from './Driver';
 
 const TextAnime = props => {
     const [sflag, setSflag]=useState(false)
-    const [pseudoText, setPseudoText] = useState(()=>{
+    const [pseudoText,] = useState(()=>{
         if (typeof (props.text) === 'object' && props.text.length > 1) return props.text
         if (typeof (props.text) === 'object') {
             return props.text
@@ -107,7 +107,7 @@ const TextAnime = props => {
 
     }, [index,sflag]);
 
-    return <div className={props.style!==undefined?props.style:""}>
+    return <div className={props.styling!==undefined?props.styling:""}>
         <Driver
             text={text}
             textSpeed={textSpeed}
