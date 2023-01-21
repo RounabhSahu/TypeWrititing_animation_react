@@ -4,7 +4,7 @@ This is a typing animation that uses simple CSS just for blinking cursor and Rea
 This animation has properties that can be used to modify the typing animation to suit your tastes.
 Use the following properties and pass it as a props to TypeAnime component and see the magic happen :)
 <ul>
-                    <li><b>style</b> <i>--default value: none --uses tailwind --styling for the text</i></li>
+                    <li><b>styling</b> <i>--default value: none --uses tailwind --styling for the text</i></li>
                     <li><b>text</b> <i> --required --use single string or array of 1 string for single text --array of multiple strings for multi text</i></li>
                     <li><b>cursor</b> <i> --default value: true --true value shows blinking cursor false remove cursor</i></li>
                     <li><b>endCursor</b> <i> --default value: false --true value removes cursor after completion false remains blinking cursor</i></li>
@@ -18,7 +18,7 @@ Use the following properties and pass it as a props to TypeAnime component and s
 ![text1.gif](text1.gif)
 ```jsx
 <TextAnime
-    style={"text-4xl text-gray-700 w-full items-center h-full text-center m-0"}
+    styling={"text-4xl text-gray-700 w-full items-center h-full text-center m-0"}
     text={['Single Text that disappears and starts 1s late']}
     startTime={1000}
     allDelete={true}
@@ -29,7 +29,7 @@ You can change Styles also iwth tailwindcss :0
 ![text2.gif](text2.gif)
 ```jsx
 <TextAnime
-    style={"text-4xl text-lime-900/50 w-full items-center h-full text-center m-0"}
+    styling={"text-4xl text-lime-900/50 w-full items-center h-full text-center m-0"}
     text={['Single Text that doesnt disappear with no cursor']}
     cursor={false}
     loop={false}
@@ -40,7 +40,7 @@ Don't want cursor at the end ... here we go ;-)
 
 ```jsx
 <TextAnime
-    style={"text-4xl text-pink-900 w-full items-center h-full text-center m-0"}
+    styling={"text-4xl text-pink-900 w-full items-center h-full text-center m-0"}
     text={['Single Text that doesnt disappear and cursor disappears at end']}
     endCursor={false}
 />
@@ -50,7 +50,7 @@ We can loop  ∞ infinitely ∞
 ![text4.gif](text4.gif)
 ```jsx
 <TextAnime
-    style={"text-4xl text-amber-900/60 w-full items-center h-full text-center m-0"}
+    styling={"text-4xl text-amber-900/60 w-full items-center h-full text-center m-0"}
     text={['Single Text that loops forever without deleting previous']}
     loop={true}
     waitTime={1000}
@@ -62,7 +62,7 @@ Mutiple texts maybe if you need ?
 ![text5.gif](text5.gif)
 ```jsx
 <TextAnime
-    style={"text-4xl text-blue-900 w-full items-center h-full text-center m-0"}
+    styling={"text-4xl text-blue-900 w-full items-center h-full text-center m-0"}
     text={['Multiple texts that keeps looping','You can also change typing speed','and other properties including styling also']}
     textSpeed={10}
     loop={true}
@@ -73,7 +73,7 @@ Have Fun !!!
 ![text6.gif](text6.gif)
 ```jsx
 <TextAnime
-    style={"text-4xl text-yellow-400 w-full items-center h-full text-center m-0"}
+    styling={"text-4xl text-yellow-400 w-full items-center h-full text-center m-0"}
     text={['Have Fun ㋡㋡㋡㋡㋡㋡㋡㋡㋡㋡','started a bit late no? ㋡㋡㋡', 'Cursor won\'t disappear ㋡㋡㋡','It won\'t loop','waits 2s before transition','㋡㋡㋡㋡㋡㋡㋡㋡']}
     startTime={2000}
     waitTime={2000}
